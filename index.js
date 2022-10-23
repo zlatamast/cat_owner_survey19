@@ -6,16 +6,16 @@ let name = document.querySelector('#name');
 let contacts = document.querySelector('#contacts');
 let catname = document.querySelector('#catname');
 
+
 class Cat {
-    constructor (name, contacts, catname) {
+    constructor(name, contacts, catname) {
         this.name = name;
         this.contacts = contacts;
         this.catname = catname;
-        // this. =  ;
     }
 }
 
-    let button = document.querySelector('#button');
+let button = document.querySelector('#button');
 button.addEventListener('click', saveResults);
 
 function saveResults(e) {
@@ -24,9 +24,9 @@ function saveResults(e) {
     let saveName = name.value;
     let saveContacts = contacts.value;
     let saveCatname = catname.value;
-    
-    let theCat = new Cat (saveName, saveContacts, saveCatname);
-    
+
+    let theCat = new Cat(saveName, saveContacts, saveCatname);
+
     console.log(theCat);
 }
 
